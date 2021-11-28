@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="card booking-schedule schedule-widget">
+          <div class="schedule-header">
+            <div class="row">
+              <div class="col-md-12">
+              </div>
+            </div>
+          </div>
+
+          <div class="schedule-cont">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="doc-times">
+                  <a [ngClass]="{'selected': selectedSlot==item}" (click)="selectedSlot=item"
+                    *ngFor="let item of avilableSlotData" class="doc-slot-list book-slot">
+                    {{slotTimeFormat(item)}}
+
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

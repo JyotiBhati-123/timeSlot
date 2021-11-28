@@ -1,0 +1,37 @@
+.book-slot{
+     
+    background-color: #edd9d9;
+    border: 4px solid #443030;
+    border-radius: 14px;
+    color: #8b0909;
+    display: inline-grid;
+    font-size: 29px;
+    margin-bottom: 30px;
+    margin-left: 85px;
+    padding: 8px 5px;
+    text-align: center;
+    position: relative;
+    width: 24.28%;
+}
+.container{
+    margin-top: 20px;
+}
+.doc-times{
+    margin-top: 20px;
+}
+
+.book-slot.selected {
+    background-color: #42c0fb;
+    border: 1px solid #42c0fb;
+    color: #fff;
+}
+.book-slot.selected::before {
+    color: #fff;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    font-weight: 900;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+}
